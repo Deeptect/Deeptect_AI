@@ -1,0 +1,71 @@
+nohup: ignoring input
+/home/elicer/miniconda3/envs/deepfake_env/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/elicer/miniconda3/envs/deepfake_env/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNeXt50_32X4D_Weights.IMAGENET1K_V1`. You can also use `weights=ResNeXt50_32X4D_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/50
+📌 First epoch model saved
+✅ Best model saved at epoch 1 (val acc: 45.75%)
+Epoch 2/50
+✅ Best model saved at epoch 2 (val acc: 49.25%)
+Epoch 3/50
+Epoch 4/50
+Epoch 5/50
+Epoch 6/50
+Epoch 7/50
+✅ Best model saved at epoch 7 (val acc: 50.50%)
+Epoch 8/50
+Epoch 9/50
+✅ Best model saved at epoch 9 (val acc: 51.50%)
+Epoch 10/50
+Epoch 11/50
+Epoch 12/50
+Epoch 13/50
+✅ Best model saved at epoch 13 (val acc: 54.25%)
+Epoch 14/50
+Epoch 15/50
+✅ Best model saved at epoch 15 (val acc: 54.50%)
+Epoch 16/50
+Epoch 17/50
+✅ Best model saved at epoch 17 (val acc: 58.50%)
+Epoch 18/50
+Epoch 19/50
+✅ Best model saved at epoch 19 (val acc: 59.00%)
+Epoch 20/50
+Epoch 21/50
+Epoch 22/50
+✅ Best model saved at epoch 22 (val acc: 59.50%)
+Epoch 23/50
+Epoch 24/50
+Epoch 25/50
+Epoch 26/50
+Epoch 27/50
+Epoch 28/50
+Epoch 29/50
+✅ Best model saved at epoch 29 (val acc: 60.00%)
+Epoch 30/50
+✅ Best model saved at epoch 30 (val acc: 61.00%)
+Epoch 31/50
+Epoch 32/50
+Epoch 33/50
+Epoch 34/50
+Epoch 35/50
+Epoch 36/50
+Epoch 37/50
+Epoch 38/50
+Epoch 39/50
+Epoch 40/50
+✅ Best model saved at epoch 40 (val acc: 62.25%)
+Epoch 41/50
+✅ Best model saved at epoch 41 (val acc: 62.50%)
+Epoch 42/50
+✅ Best model saved at epoch 42 (val acc: 64.50%)
+Epoch 43/50
+Epoch 44/50
+Epoch 45/50
+Epoch 46/50
+Epoch 47/50
+Epoch 48/50
+Epoch 49/50
+Epoch 50/50
+📌 Last epoch model saved

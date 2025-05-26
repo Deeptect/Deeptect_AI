@@ -7,9 +7,18 @@
 ## 📦 1. Python 환경 및 의존성 설치
 
 ```bash
-# Python 가상환경 권장
-python -m venv venv
-source venv/bin/activate  # (Windows: venv\Scripts\activate)
+# python 가상환경 생성(권장)
+python -m venv deepfake_env
+
+# 가상환경 활성화
+# (macOS / Linux)
+source deepfake_env/bin/activate
+
+# (Windows CMD)
+deepfake_env\Scripts\activate
+
+# (Windows PowerShell)
+.\deepfake_env\Scripts\Activate.ps1
 
 # 의존성 설치
 pip install -r requirements.txt
@@ -48,10 +57,10 @@ datasets/
 ├── FaceForensics++/
 │   ├── original/             # Real 영상
 │   ├── Deepfakes/            # Fake 영상
-│   └── labels.csv            # real / fake 라벨
+│   └── Global_metadata.csv            # real / fake 라벨
 ```
 
-> `labels.csv`에는 영상 파일 이름과 라벨(`real`, `fake`)이 포함되어 있어야 합니다.
+> `Global_metadata.csv`에는 영상 파일 이름과 라벨(`real`, `fake`)이 포함되어 있어야 합니다.
 
 ---
 
@@ -67,8 +76,6 @@ Input: sample.mp4
 Prediction: FAKE
 Confidence: 0.9812
 ```
-
-> `--input_path` 옵션에 추론할 영상의 경로를 지정하세요.
 
 ---
 
@@ -86,7 +93,3 @@ Deeptect_AI/
 ```
 
 ---
-
-## 📬 문의
-
-질문이나 제안 사항은 [GitHub Issue](https://github.com/Deeptect/Deeptect_AI/issues) 또는 팀 내부 채널을 통해 문의해 주세요.

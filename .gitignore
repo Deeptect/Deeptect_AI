@@ -5,3 +5,4 @@ datasets/
 *.pt
 *.h5
 *.ckpt
+deepfake_env/

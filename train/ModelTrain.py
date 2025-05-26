@@ -152,17 +152,17 @@ for epoch in range(1, epochs + 1):
 
     # 처음 epoch 저장
     if epoch == 1:
-        torch.save(model.state_dict(), './checkpoints/first_epoch_model.pth')
+        torch.save(model.state_dict(), './weights/first_epoch_model.pth')
         print("📌 First epoch model saved")
 
     # 최고 성능 저장
     if v_acc > best_val_acc:
         best_val_acc = v_acc
-        torch.save(model.state_dict(), './checkpoints/best_model.pth')
+        torch.save(model.state_dict(), './weights/best_model.pth')
         print(f"✅ Best model saved at epoch {epoch} (val acc: {v_acc:.2f}%)")
 
 # 마지막 epoch 저장
-torch.save(model.state_dict(), './checkpoints/last_epoch_model.pth')
+torch.save(model.state_dict(), './weights/last_epoch_model.pth')
 print("📌 Last epoch model saved")
 
 # ========== [7] 시각화 ==========

@@ -13,7 +13,7 @@ import seaborn as sn
 from sklearn.metrics import confusion_matrix, precision_score, recall_score
 
 # 저장 디렉토리 생성
-os.makedirs('./checkpoints2', exist_ok=True)
+os.makedirs('./weights', exist_ok=True)
 os.makedirs('./plots', exist_ok=True)
 
 # ========== [1] 비디오 및 라벨 로딩 ==========
@@ -155,15 +155,15 @@ for epoch in range(1, epochs + 1):
     precisions.append(v_prec); recalls.append(v_rec)
 
     if epoch == 1:
-        torch.save(model.state_dict(), './checkpoints2/first_epoch_model.pth')
+        torch.save(model.state_dict(), './weights/first_epoch_model.pth')
         print("📌 First epoch model saved")
 
     if v_acc > best_val_acc:
         best_val_acc = v_acc
-        torch.save(model.state_dict(), './checkpoints2/best_model.pth')
+        torch.save(model.state_dict(), './weights/best_model.pth')
         print(f"✅ Best model saved at epoch {epoch} (val acc: {v_acc:.2f}%)")
 
-torch.save(model.state_dict(), './checkpoints2/last_epoch_model.pth')
+torch.save(model.state_dict(), './weights/last_epoch_model.pth')
 print("📌 Last epoch model saved")
 
 # ========== [7] 시각화 저장 ==========
