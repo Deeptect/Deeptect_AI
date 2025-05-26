@@ -1,0 +1,7 @@
+# .gitignore
+weights/
+datasets/
+*.pth
+*.pt
+*.h5
+*.ckpt
